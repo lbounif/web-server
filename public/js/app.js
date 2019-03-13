@@ -26,13 +26,11 @@ weatherForm.addEventListener('submit', (e) => {
                //messageTwo.textContent = JSON.stringify(data.forcast)
 
                 console.log(data.location)
-
-                console.log(typeof(messageTwo))
                // const summary = JSON.stringify(data.forcast.summary)
                 //const temperature = data.forcast.temperature
                // const rain = data.forcast.rain
                // console.log(typeof(rain))
-                 messageTwo.textContent = 'Summary: ' + data.forcast.summary + ' \nTemperature: '+ data.forcast.temperature +' \nRain: '+ data.forcast.rain 
+                 messageTwo.textContent = data.forcast
                 //console.log(JSON.stringify(data.forcast))
                 //console.log('Summary: '+ summary, '\n temperature: '+ temperature, '\n rain: '+ rain)
                 //messageTwo = summary
